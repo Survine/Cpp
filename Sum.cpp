@@ -3,7 +3,8 @@ using namespace std;
 
 int main()
 {
-    int a = 5;
-    int b = 6;
+    int a,b;
+    cin >> a;
+    cin >> b;
     cout << a+b;
 }
