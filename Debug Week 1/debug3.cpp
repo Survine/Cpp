@@ -10,22 +10,17 @@ N = 4
 using namespace std;
 int main(){
     int n=4;
-    int i=1;
+    int i=0;
     while(i<n){
-        int j = i,count = 2*n+1,gaps=(n-i-1),k=1;
-        while(k<gaps){
+        int k = 0,gaps=(n-i-1);
+        while(k<=gaps){
             cout<<" ";
             k = k + 1;
         }
-        int m = 1,ch = count - 2*gaps;
+        int m = 0,ch = 2*i+1;
         while(m<ch){
             cout<<"*";
             m = m + 1;
-        }
-        k = 1;
-        while(k<gaps){
-            cout<<" ";
-            k = k + 1;
         }
         cout<<"\n";
         i = i + 1;
