@@ -18,7 +18,7 @@ int main()
         for (j = 0; j < i+1; j++)
         {
             cout << p-j;
-            p--;
+            p++;
         }
         cout << endl;
     }
