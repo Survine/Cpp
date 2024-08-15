@@ -7,12 +7,12 @@ int main()
     for (int i = 0; i < n; i++)
     {
         // gaps
-        for (int j = 0; j < n - i - 1; j++)
+        for (int j = 0; j < i+1; j++)
         {
             cout << " ";
         }
         // stars
-        for (int k = 0; k < i + 1; k++)
+        for (int k = 0; k < n-i; k++)
         {
             cout << "* ";
         }

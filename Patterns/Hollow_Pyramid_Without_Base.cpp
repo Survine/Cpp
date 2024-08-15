@@ -14,7 +14,14 @@ int main()
         // stars
         for (int k = 0; k < i + 1; k++)
         {
-            cout << "* ";
+            if(k==0 || k==i)
+            {
+                cout << "* ";
+            }
+            else
+            {
+                cout << "  ";
+            }
         }
         cout << endl;
     }
