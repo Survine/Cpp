@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     int n = 5;
+    cout << "*" <<endl;
     for (int i = 0; i < n - 2; i++)
     {
         for (int k = 0; k < 1; k++)
@@ -18,8 +19,13 @@ int main()
         {
             cout << k;
         }
+        for (int k = 0; k < 1; k++)
+        {
+            cout << "*";
+        }
         cout << endl;
     }
+
     for (int i = 0; i < n - 3; i++)
     {
         for (int k = 0; k < 1; k++)
@@ -38,6 +44,11 @@ int main()
                 continue;
             }
         }
+        for (int k = 0; k < 1; k++)
+        {
+            cout << "*";
+        }
         cout << endl;
     }
+    cout <<"*";
 }
