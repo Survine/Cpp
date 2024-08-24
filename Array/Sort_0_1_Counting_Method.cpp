@@ -27,12 +27,11 @@ void Sort(int arr[], int size)
     //     arr[j]=1;
     // }
     int i=0;
-    while(count_0--)
+    while(count_0--) //ALternative loop
     {
         arr[i] = 0;
         i++;
     }
-                                                                            //ALternative loop
     while(count_1--)
     {
         arr[i] =1;

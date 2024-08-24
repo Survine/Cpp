@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Print Function
 void Print_Array(int arr[], int size)
 {
     int count_0 = 0;
@@ -22,6 +23,7 @@ void Print_Array(int arr[], int size)
     cout << "Total Ones : " << count_1 << endl;
 }
 
+//Input Array
 void Input_Array(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
@@ -30,6 +32,7 @@ void Input_Array(int arr[], int size)
     }
 }
 
+//Main
 int main()
 {
     int arr[10], size = 10;

@@ -12,11 +12,11 @@ void Extreme_Print(int arr[], int size)
         }
         else
         {
-            cout << arr[i] << " ";
-            cout << arr[j] << " ";
+            cout << arr[i] << " ";                 //Here We are printing the First Start of Array
+            cout << arr[j] << " ";                 //Here We are printing the Last End of Array
         }
-        i++;
-        j--;
+        i++;                                       //Incrementing the starting point
+        j--;                                       //Decrementing the ending point
     }
 }
 

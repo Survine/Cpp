@@ -4,6 +4,10 @@ using namespace std;
 
 void Maximum(int arr[],int size)
 {
+    //Initialising with opposite of what asked,
+    //We take the smallest value as initial
+    //To compare than traditional approach
+    
     int max=INT_MIN;
     for(int i=0; i<size;i++)
     {

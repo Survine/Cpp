@@ -1,37 +1,37 @@
 #include <iostream>
 using namespace std;
 
-void sortZeroOne(int arr[], int size) {
-    int i = 0;       // Pointer to start of the array
-    int j = size - 1; // Pointer to end of the array
+void sortZeroOne(int arr[], int size)
+{
+    //Dutch National Flag Algorithm
+    int low = 0;         // Pointer to place 0s
+    int high = size - 1; // Pointer to place 1s
+    int i = 0;
 
-    while (i < j) {
-        // Move i forward until a 1 is found
-        while (i < j && arr[i] == 0) {
+    while (i <= high)
+    {
+        if (arr[i] == 0)
+        {
+            swap(arr[i], arr[low]);
             i++;
+            low++;
         }
-
-        // Move j backward until a 0 is found
-        while (i < j && arr[j] == 1) {
-            j--;
-        }
-
-        // If a 1 is found at i and a 0 is found at j, swap them
-        if (i < j) {
-            swap(arr[i], arr[j]);
+        else
+        {
             i++;
-            j--;
         }
     }
 }
 
-int main() {
-    int arr[] = {1, 0, 1, 0, 0, 1};
+int main()
+{
+    int arr[] = {1, 0, 1, 0, 0, 1, 0, 0, 1};
     int size = sizeof(arr) / sizeof(arr[0]);
 
     sortZeroOne(arr, size);
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         cout << arr[i] << " ";
     }
 
