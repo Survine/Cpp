@@ -1,11 +1,17 @@
 #include <iostream>
 using namespace std;
 
-void diagonalPrint(int arr[][4], int row, int col)
+void diagonalPrint(int arr[][4],int row,int col)
 {
-    for (int i = 0; i < row; i++)
+    for(int i=0; i<row; i++)
     {
-        cout << arr[i][i] << " ";
+        for (int j = 0; j < col; j++)
+        {
+            if(i+j==3)
+            {
+                cout << arr[i][j] << " ";
+            }
+        }
     }
 }
 

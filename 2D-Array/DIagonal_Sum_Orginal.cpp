@@ -3,10 +3,12 @@ using namespace std;
 
 void diagonalPrint(int arr[][4], int row, int col)
 {
+    int sum = 0;
     for (int i = 0; i < row; i++)
     {
-        cout << arr[i][i] << " ";
+        sum += arr[i][i];
     }
+    cout << "Sum of diagonal : " << sum;
 }
 
 int main()
